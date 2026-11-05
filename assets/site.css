@@ -77,12 +77,13 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 
 /* portada, armada como una carta de menú */
 .hero { background: var(--amarillo); color: var(--ink); min-height: calc(100svh - 2 * var(--frame)); display: flex; flex-direction: column; align-items: center; text-align: center; padding-top: 22px; }
-.topbar { width: 100%; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 16px; }
+.topbar { width: 100%; display: grid; grid-template-columns: 1fr auto 1fr; align-items: start; gap: 16px; }
 .topbar > :first-child { justify-self: start; }
 .topbar > :last-child { justify-self: end; }
 .topbar a { min-height: 44px; display: inline-flex; align-items: center; }
-.wordmark { font-size: var(--step-lead); font-weight: 600; font-stretch: 125%; letter-spacing: -0.01em; text-decoration: none; white-space: nowrap; }
-.hero-body { margin-top: clamp(4.5rem, 23svh, 14rem); display: flex; flex-direction: column; align-items: center; }
+/* el logo del cliente, en el centro de la carta, como el sello de la casa */
+.logo img { width: clamp(150px, 25svh, 250px); height: auto; }
+.hero-body { margin-top: clamp(2rem, 6svh, 4.5rem); display: flex; flex-direction: column; align-items: center; }
 .hero h1 { max-width: 18ch; }
 .lines .line { display: block; overflow: clip; padding-bottom: 0.08em; margin-bottom: -0.08em; }
 .lines [data-line] { display: block; }
@@ -179,8 +180,8 @@ a.row .txt { transition: transform 420ms var(--ease-out); }
   .sheet { padding-inline: var(--frame); }
   .hero { min-height: 0; padding-top: 20px; padding-bottom: 64px; }
   .topbar { gap: 12px; }
-  .wordmark { font-stretch: 110%; }
-  .hero-body { margin-top: 44px; }
+  .logo img { width: clamp(124px, 34vw, 168px); }
+  .hero-body { margin-top: 28px; }
   .hero-body > p { margin-top: 24px; }
   .hero-body .button { width: 100%; margin-top: 28px; }
   .stage-bar { grid-template-columns: 1fr auto; padding: 6px 16px; }
