@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Our Daily Bread | Honduran Food in Owings Mills, MD</title>
-<meta name="description" content="Honduran food made fresh every day in Owings Mills, Maryland: fried chicken, whole fried fish and pollo chuco over green plantain tajadas. Call 443-929-5727 or 443-468-2130 to order.">
+<meta name="description" content="Honduran food made fresh every day in Owings Mills, Maryland: fried chicken, whole fried fish and pollo chuco over green plantain tajadas, plus chicken tenders with fresh-cut fries. Call 443-929-5727 or 443-468-2130 to order.">
 <meta name="theme-color" content="#d9dddf">
 <link rel="icon" href="assets/icono.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/icono.png">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://our-daily-bread-six.vercel.app/en.html">
 <meta property="og:title" content="Our Daily Bread | Honduran Food in Owings Mills, MD">
-<meta property="og:description" content="Honduran food made fresh every day in Owings Mills, Maryland: fried chicken, whole fried fish and pollo chuco over green plantain tajadas. Call 443-929-5727 or 443-468-2130 to order.">
+<meta property="og:description" content="Honduran food made fresh every day in Owings Mills, Maryland: fried chicken, whole fried fish and pollo chuco over green plantain tajadas, plus chicken tenders with fresh-cut fries. Call 443-929-5727 or 443-468-2130 to order.">
 <meta property="og:image" content="https://our-daily-bread-six.vercel.app/assets/compartir.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -53,6 +53,7 @@
     <div class="layer" data-layer="pollo"><img src="assets/pollo-tajadas.jpg" width="1200" height="1600" alt="Golden fried chicken over green plantain tajadas, with chismol and pink dressing, on a red plate" loading="lazy" decoding="async"></div>
     <div class="layer" data-layer="pescado"><img src="assets/pescado-frito.jpg" width="1200" height="1600" alt="Whole fried fish with pickled red onion, chismol, lime, radish and tajadas, on a red plate" loading="lazy" decoding="async"></div>
     <div class="layer" data-layer="chuco"><img src="assets/pollo-chuco.jpg" width="1200" height="1600" alt="Pollo chuco on a to-go plate: fried chicken over tajadas with cabbage, chismol, red sauce and dressing" loading="lazy" decoding="async"></div>
+    <div class="layer" data-layer="tenders"><img src="assets/tenders-papas.jpg" width="1200" height="1600" alt="Seasoned fried chicken tenders over hand-cut fries in a paper tray" loading="lazy" decoding="async"></div>
     <div class="layer" data-layer="historia">
       <video muted loop playsinline preload="none" poster="assets/pollo-chuco-armado-poster.jpg" width="576" height="1024" aria-hidden="true">
         <source src="assets/pollo-chuco-armado.mp4" type="video/mp4">
@@ -94,6 +95,7 @@
         <button class="tab" type="button" role="tab" id="tab-pollo" aria-selected="true" aria-controls="plato-pollo" data-plate="pollo">Fried chicken</button>
         <button class="tab" type="button" role="tab" id="tab-pescado" aria-selected="false" aria-controls="plato-pescado" data-plate="pescado" tabindex="-1">Fried fish</button>
         <button class="tab" type="button" role="tab" id="tab-chuco" aria-selected="false" aria-controls="plato-chuco" data-plate="chuco" tabindex="-1">Pollo chuco</button>
+        <button class="tab" type="button" role="tab" id="tab-tenders" aria-selected="false" aria-controls="plato-tenders" data-plate="tenders" tabindex="-1">Chicken tenders</button>
       </div>
 
       <div class="plato" id="plato-pollo" role="tabpanel" aria-labelledby="tab-pollo" data-plate="pollo">
@@ -120,6 +122,14 @@
           <a class="cell cell-tone" href="sms:+14439295727?&amp;body=Hi%2C%20Our%20Daily%20Bread.%20I'd%20like%20to%20order%20one%20pollo%20chuco." data-sms="one pollo chuco">Order by text</a>
         </div>
       </div>
+      <div class="plato" id="plato-tenders" role="tabpanel" aria-labelledby="tab-tenders" data-plate="tenders">
+        <h3>Chicken tenders with fresh-cut fries</h3>
+        <p>Breaded chicken breast strips fried to order and seasoned on top, with hand-cut fries.</p>
+        <div class="cells">
+          <a class="cell cell-ink" href="tel:+14439295727">Call to order</a>
+          <a class="cell cell-tone" href="sms:+14439295727?&amp;body=Hi%2C%20Our%20Daily%20Bread.%20I'd%20like%20to%20order%20chicken%20tenders%20with%20fries." data-sms="chicken tenders with fries">Order by text</a>
+        </div>
+      </div>
       <p class="nota small">Prices and what's available today: <a class="link nums" href="tel:+14439295727">443-929-5727</a> or <a class="link nums" href="tel:+14434682130">443-468-2130</a>.</p>
     </section>
 
@@ -142,6 +152,7 @@
       <h2 class="head" id="fresco-titulo" data-reveal>Fresh every day</h2>
       <p data-reveal style="--i:1">Green plantain, whole fish, chicken, tomato and onion: the basic ingredients of Honduran cooking, prepared the same day they're served.</p>
       <img class="fresco-foto settle" data-reveal style="--i:2" src="assets/pescado-cerca.jpg" width="1200" height="1600" alt="Close up: radish, lime, pickled red onion, chismol and tajadas beside the fried fish" loading="lazy" decoding="async">
+      <img class="fresco-foto settle" data-reveal style="--i:3" src="assets/tenders-canasta.jpg" width="1125" height="1500" alt="Chicken tenders fresh out of the oil in the fryer basket" loading="lazy" decoding="async">
     </div>
 
     <div class="comanda" role="group" aria-label="What goes in each dish" data-reveal style="--i:1">
@@ -174,6 +185,14 @@
           <div class="fila" data-reveal style="--i:0"><dt>Underneath</dt><dd>tajadas and cabbage</dd></div>
           <div class="fila" data-reveal style="--i:1"><dt>On top</dt><dd>chismol and red sauce</dd></div>
           <div class="fila" data-reveal style="--i:2"><dt>To finish</dt><dd>dressing</dd></div>
+        </dl>
+      </div>
+      <div class="grupo">
+        <h3>Chicken tenders with fresh-cut fries</h3>
+        <dl>
+          <div class="fila" data-reveal style="--i:0"><dt>Tenders</dt><dd>breaded and fried</dd></div>
+          <div class="fila" data-reveal style="--i:1"><dt>Fries</dt><dd>cut by hand</dd></div>
+          <div class="fila" data-reveal style="--i:2"><dt>On top</dt><dd>house seasoning</dd></div>
         </dl>
       </div>
       <p class="total"><span>Cooked today</span><span data-today="corto">today</span></p>
