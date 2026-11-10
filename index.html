@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Our Daily Bread | Comida hondureña en Owings Mills, MD</title>
-<meta name="description" content="Comida hondureña fresca del día en Owings Mills, Maryland: pollo frito, pescado entero y pollo chuco con tajadas, y chicken tenders con papas fritas. Pedidos al 443-929-5727 o al 443-468-2130.">
+<meta name="description" content="Comida hondureña fresca del día en Owings Mills, Maryland: pollo frito, pescado entero y pollo chuco con tajadas, chicken tenders con papas fritas y baleadas. Pedidos al 443-929-5727 o al 443-468-2130.">
 <meta name="theme-color" content="#d9dddf">
 <link rel="icon" href="assets/icono.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/icono.png">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://our-daily-bread-six.vercel.app/">
 <meta property="og:title" content="Our Daily Bread | Comida hondureña en Owings Mills, MD">
-<meta property="og:description" content="Comida hondureña fresca del día en Owings Mills, Maryland: pollo frito, pescado entero y pollo chuco con tajadas, y chicken tenders con papas fritas. Pedidos al 443-929-5727 o al 443-468-2130.">
+<meta property="og:description" content="Comida hondureña fresca del día en Owings Mills, Maryland: pollo frito, pescado entero y pollo chuco con tajadas, chicken tenders con papas fritas y baleadas. Pedidos al 443-929-5727 o al 443-468-2130.">
 <meta property="og:image" content="https://our-daily-bread-six.vercel.app/assets/compartir.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -53,7 +53,14 @@
     <div class="layer" data-layer="pollo"><img src="assets/pollo-tajadas.jpg" width="1200" height="1600" alt="Pieza de pollo frito dorado sobre tajadas de plátano verde, con chismol y aderezo rosado, en plato rojo" loading="lazy" decoding="async"></div>
     <div class="layer" data-layer="pescado"><img src="assets/pescado-frito.jpg" width="1200" height="1600" alt="Pescado entero frito con encurtido de cebolla morada, chismol, limón, rábano y tajadas, en plato rojo" loading="lazy" decoding="async"></div>
     <div class="layer" data-layer="chuco"><img src="assets/pollo-chuco.jpg" width="1200" height="1600" alt="Pollo chuco en plato para llevar: pollo frito sobre tajadas con repollo, chismol, salsa roja y aderezo" loading="lazy" decoding="async"></div>
-    <div class="layer" data-layer="tenders"><img src="assets/tenders-papas.jpg" width="1200" height="1600" alt="Chicken tenders fritos y sazonados sobre papas fritas cortadas a mano, en bandeja de cartón" loading="lazy" decoding="async"></div>
+    <div class="layer" data-layer="tenders">
+      <video muted loop playsinline preload="none" poster="assets/tenders-armado-poster.jpg" width="576" height="1024" aria-hidden="true">
+        <source src="assets/tenders-armado.mp4" type="video/mp4">
+      </video>
+      <!-- foto oculta: la que muestra el teléfono al elegir el plato -->
+      <img hidden src="assets/tenders-papas.jpg" width="1200" height="1600" alt="Chicken tenders fritos y sazonados sobre papas fritas cortadas a mano, en bandeja de cartón" loading="lazy" decoding="async">
+    </div>
+    <div class="layer" data-layer="baleadas"><img src="assets/baleadas.jpg" width="1200" height="1600" alt="Dos baleadas de tortilla de harina, doradas en la plancha y dobladas, sobre papel aluminio" loading="lazy" decoding="async"></div>
     <div class="layer" data-layer="historia">
       <video muted loop playsinline preload="none" poster="assets/pollo-chuco-armado-poster.jpg" width="576" height="1024" aria-hidden="true">
         <source src="assets/pollo-chuco-armado.mp4" type="video/mp4">
@@ -96,6 +103,7 @@
         <button class="tab" type="button" role="tab" id="tab-pescado" aria-selected="false" aria-controls="plato-pescado" data-plate="pescado" tabindex="-1">Pescado frito</button>
         <button class="tab" type="button" role="tab" id="tab-chuco" aria-selected="false" aria-controls="plato-chuco" data-plate="chuco" tabindex="-1">Pollo chuco</button>
         <button class="tab" type="button" role="tab" id="tab-tenders" aria-selected="false" aria-controls="plato-tenders" data-plate="tenders" tabindex="-1">Chicken tenders</button>
+        <button class="tab" type="button" role="tab" id="tab-baleadas" aria-selected="false" aria-controls="plato-baleadas" data-plate="baleadas" tabindex="-1">Baleadas</button>
       </div>
 
       <div class="plato" id="plato-pollo" role="tabpanel" aria-labelledby="tab-pollo" data-plate="pollo">
@@ -130,6 +138,14 @@
           <a class="cell cell-tone" href="sms:+14439295727?&amp;body=Hola%2C%20Our%20Daily%20Bread.%20Quiero%20pedir%20chicken%20tenders%20con%20papas%20fritas." data-sms="chicken tenders con papas fritas">Pedir por mensaje</a>
         </div>
       </div>
+      <div class="plato" id="plato-baleadas" role="tabpanel" aria-labelledby="tab-baleadas" data-plate="baleadas">
+        <h3>Baleadas</h3>
+        <p>Tortilla de harina grande, dorada en la plancha y doblada sobre frijoles refritos, queso y huevo revuelto.</p>
+        <div class="cells">
+          <a class="cell cell-ink" href="tel:+14439295727">Llamar para pedir</a>
+          <a class="cell cell-tone" href="sms:+14439295727?&amp;body=Hola%2C%20Our%20Daily%20Bread.%20Quiero%20pedir%20baleadas." data-sms="baleadas">Pedir por mensaje</a>
+        </div>
+      </div>
       <p class="nota small">Precios y lo que hay hoy: <a class="link nums" href="tel:+14439295727">443-929-5727</a> o <a class="link nums" href="tel:+14434682130">443-468-2130</a>.</p>
     </section>
 
@@ -153,6 +169,7 @@
       <p data-reveal style="--i:1">Plátano verde, pescado entero, pollo, tomate y cebolla: los recursos primarios de la cocina hondureña, preparados el mismo día en que se sirven.</p>
       <img class="fresco-foto settle" data-reveal style="--i:2" src="assets/pescado-cerca.jpg" width="1200" height="1600" alt="De cerca: rábano, limón, encurtido morado, chismol y tajadas junto al pescado frito" loading="lazy" decoding="async">
       <img class="fresco-foto settle" data-reveal style="--i:3" src="assets/tenders-canasta.jpg" width="1125" height="1500" alt="Chicken tenders recién salidos del aceite en la canasta de la freidora" loading="lazy" decoding="async">
+      <img class="fresco-foto settle" data-reveal style="--i:4" src="assets/baleadas-plancha.jpg" width="780" height="1040" alt="Baleadas recién salidas de la plancha, junto a la sartén de frijoles refritos y la de huevo revuelto" loading="lazy" decoding="async">
     </div>
 
     <div class="comanda" role="group" aria-label="Lo que lleva cada plato" data-reveal style="--i:1">
@@ -193,6 +210,14 @@
           <div class="fila" data-reveal style="--i:0"><dt>Tenders</dt><dd>empanizados y fritos</dd></div>
           <div class="fila" data-reveal style="--i:1"><dt>Papas</dt><dd>cortadas a mano</dd></div>
           <div class="fila" data-reveal style="--i:2"><dt>Encima</dt><dd>sazón de la casa</dd></div>
+        </dl>
+      </div>
+      <div class="grupo">
+        <h3>Baleadas</h3>
+        <dl>
+          <div class="fila" data-reveal style="--i:0"><dt>Tortilla</dt><dd>de harina, a la plancha</dd></div>
+          <div class="fila" data-reveal style="--i:1"><dt>Adentro</dt><dd>frijoles refritos y queso</dd></div>
+          <div class="fila" data-reveal style="--i:2"><dt>Con</dt><dd>huevo revuelto</dd></div>
         </dl>
       </div>
       <p class="total"><span>Cocinado hoy</span><span data-today="corto">del día</span></p>
