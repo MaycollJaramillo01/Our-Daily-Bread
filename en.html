@@ -61,6 +61,7 @@
       <img hidden src="assets/tenders-papas.jpg" width="1200" height="1600" alt="Seasoned fried chicken tenders over hand-cut fries in a paper tray" loading="lazy" decoding="async">
     </div>
     <div class="layer" data-layer="baleadas"><img src="assets/baleadas.jpg" width="1200" height="1600" alt="Two flour-tortilla baleadas, browned on the griddle and folded, on aluminum foil" loading="lazy" decoding="async"></div>
+    <div class="layer" data-layer="ensalada"><img src="assets/ensalada-pollo.jpg" width="1200" height="1600" alt="Chicken salad to go: sliced golden chicken breast over mixed greens with avocado, cherry tomatoes, cucumber and onion, dressing on the side" loading="lazy" decoding="async"></div>
     <div class="layer" data-layer="historia">
       <video muted loop playsinline preload="none" poster="assets/pollo-chuco-armado-poster.jpg" width="576" height="1024" aria-hidden="true">
         <source src="assets/pollo-chuco-armado.mp4" type="video/mp4">
@@ -104,6 +105,7 @@
         <button class="tab" type="button" role="tab" id="tab-chuco" aria-selected="false" aria-controls="plato-chuco" data-plate="chuco" tabindex="-1">Pollo chuco</button>
         <button class="tab" type="button" role="tab" id="tab-tenders" aria-selected="false" aria-controls="plato-tenders" data-plate="tenders" tabindex="-1">Chicken tenders</button>
         <button class="tab" type="button" role="tab" id="tab-baleadas" aria-selected="false" aria-controls="plato-baleadas" data-plate="baleadas" tabindex="-1">Baleadas</button>
+        <button class="tab" type="button" role="tab" id="tab-ensalada" aria-selected="false" aria-controls="plato-ensalada" data-plate="ensalada" tabindex="-1">Chicken salad</button>
       </div>
 
       <div class="plato" id="plato-pollo" role="tabpanel" aria-labelledby="tab-pollo" data-plate="pollo">
@@ -146,6 +148,14 @@
           <a class="cell cell-tone" href="sms:+14439295727?&amp;body=Hi%2C%20Our%20Daily%20Bread.%20I'd%20like%20to%20order%20baleadas." data-sms="baleadas">Order by text</a>
         </div>
       </div>
+      <div class="plato" id="plato-ensalada" role="tabpanel" aria-labelledby="tab-ensalada" data-plate="ensalada">
+        <h3>Chicken salad with avocado</h3>
+        <p>Seasoned, golden chicken breast, sliced over mixed greens with avocado, cherry tomatoes, cucumber and onion rings. The house dressing comes on the side.</p>
+        <div class="cells">
+          <a class="cell cell-ink" href="tel:+14439295727">Call to order</a>
+          <a class="cell cell-tone" href="sms:+14439295727?&amp;body=Hi%2C%20Our%20Daily%20Bread.%20I'd%20like%20to%20order%20one%20chicken%20salad." data-sms="one chicken salad">Order by text</a>
+        </div>
+      </div>
       <p class="nota small">Prices and what's available today: <a class="link nums" href="tel:+14439295727">443-929-5727</a> or <a class="link nums" href="tel:+14434682130">443-468-2130</a>.</p>
     </section>
 
@@ -153,10 +163,18 @@
       <div class="carta">
         <h2 class="head" id="historia-titulo" data-reveal>Our story</h2>
         <p data-reveal style="--i:1">I have always had the conviction and the vision to start a business of my own.</p>
-        <p data-reveal style="--i:2">Since I left Honduras I have had good mentors, and today I feel ready for this challenge: a project with a big vision for the future.</p>
-        <p data-reveal style="--i:3">We make the most of basic, primary ingredients with a simple concept: high-quality food, always fresh that day.</p>
-        <p data-reveal style="--i:4">And always helping the community, convinced that <span class="marca">only the people save the people</span>.</p>
-        <p class="firma" data-reveal style="--i:5"><strong>The founder</strong><span>Our Daily Bread, Owings Mills, Maryland</span></p>
+        <p data-reveal style="--i:2">I started in the kitchen from the bottom: washing dishes, hauling bus tubs in the storeroom, making dough and tending the pizza oven. That's where I learned the trade, one shift at a time.</p>
+        <div class="album">
+          <figure data-reveal style="--i:0"><img src="assets/historia-lavaplatos.jpg" width="900" height="627" alt="A young Franklin in a white chef coat and gloves at a restaurant dish station" loading="lazy" decoding="async"><figcaption>At the dish station.</figcaption></figure>
+          <figure data-reveal style="--i:1"><img src="assets/historia-bodega.jpg" width="900" height="657" alt="A young Franklin in a white apron carrying a gray bus tub through the kitchen storeroom" loading="lazy" decoding="async"><figcaption>Hauling bus tubs in the storeroom.</figcaption></figure>
+          <figure data-reveal style="--i:2"><img src="assets/historia-masa.jpg" width="815" height="560" alt="A young Franklin, smiling, shaping dough balls at a prep table next to the mixer" loading="lazy" decoding="async"><figcaption>Making the dough.</figcaption></figure>
+          <figure data-reveal style="--i:3"><img src="assets/historia-horno.jpg" width="900" height="660" alt="A young Franklin in an apron working beside the steel pizza ovens" loading="lazy" decoding="async"><figcaption>By the pizza oven.</figcaption></figure>
+        </div>
+        <p data-reveal style="--i:1">Since I left Honduras I have had good mentors, and today I feel ready for this challenge: a project with a big vision for the future.</p>
+        <p data-reveal style="--i:2">We make the most of basic, primary ingredients with a simple concept: high-quality food, always fresh that day.</p>
+        <p data-reveal style="--i:3">And always helping the community, convinced that <span class="marca">only the people save the people</span>.</p>
+        <figure class="hoy" data-reveal style="--i:1"><img src="assets/historia-hoy.jpg" width="1200" height="891" alt="Franklin today, smiling in a purple T-shirt next to another man in a café with tall windows" loading="lazy" decoding="async"><figcaption>Franklin, today.</figcaption></figure>
+        <p class="firma" data-reveal style="--i:2"><strong>Chef Franklin</strong><span>Founder of Our Daily Bread, Owings Mills, Maryland</span></p>
       </div>
     </section>
   </div>
@@ -170,6 +188,7 @@
       <img class="fresco-foto settle" data-reveal style="--i:2" src="assets/pescado-cerca.jpg" width="1200" height="1600" alt="Close up: radish, lime, pickled red onion, chismol and tajadas beside the fried fish" loading="lazy" decoding="async">
       <img class="fresco-foto settle" data-reveal style="--i:3" src="assets/tenders-canasta.jpg" width="1125" height="1500" alt="Chicken tenders fresh out of the oil in the fryer basket" loading="lazy" decoding="async">
       <img class="fresco-foto settle" data-reveal style="--i:4" src="assets/baleadas-plancha.jpg" width="780" height="1040" alt="Baleadas fresh off the griddle, next to the pan of refried beans and the pan of scrambled eggs" loading="lazy" decoding="async">
+      <img class="fresco-foto settle" data-reveal style="--i:5" src="assets/ensalada-pollo-cerca.jpg" width="1200" height="1600" alt="A freshly made chicken salad: fanned avocado, golden chicken and the house dressing in its cup" loading="lazy" decoding="async">
     </div>
 
     <div class="comanda" role="group" aria-label="What goes in each dish" data-reveal style="--i:1">
@@ -218,6 +237,15 @@
           <div class="fila" data-reveal style="--i:0"><dt>Tortilla</dt><dd>flour, griddled</dd></div>
           <div class="fila" data-reveal style="--i:1"><dt>Inside</dt><dd>refried beans and cheese</dd></div>
           <div class="fila" data-reveal style="--i:2"><dt>With</dt><dd>scrambled eggs</dd></div>
+        </dl>
+      </div>
+      <div class="grupo">
+        <h3>Chicken salad with avocado</h3>
+        <dl>
+          <div class="fila" data-reveal style="--i:0"><dt>Chicken</dt><dd>golden breast</dd></div>
+          <div class="fila" data-reveal style="--i:1"><dt>Base</dt><dd>mixed greens</dd></div>
+          <div class="fila" data-reveal style="--i:2"><dt>On top</dt><dd>avocado and tomato</dd></div>
+          <div class="fila" data-reveal style="--i:3"><dt>On the side</dt><dd>house dressing</dd></div>
         </dl>
       </div>
       <p class="total"><span>Cooked today</span><span data-today="corto">today</span></p>
